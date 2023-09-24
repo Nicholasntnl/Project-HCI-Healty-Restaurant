@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <title>Find Us Page</title>
+        <script src="https://kit.fontawesome.com/d1d00c550e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body background="">
+        <center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </center>
+        <div class="container">
+            <h1>Our Location</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.466724809423!2d106.77931301458861!3d-6.201994795510199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcc7d2c4ad%3A0x209cb1eef39be168!2sUniversitas%20Bina%20Nusantara%2C%20Kampus%20Anggrek!5e0!3m2!1sid!2sid!4v1654792263485!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>        
+
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About-us.html">About Us</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="findus.html">Find Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="tombol2">
+            <img src="menu.png" id="menuu">
+        </div>
+    
+        <section id="footer">
+            <div class="title-text">
+                <p>Contact</p>
+                <h1>You can contact Us</h1>
+            </div>
+            <div class="fr">
+                <div class="fle">
+                    <h1>Office</h1>
+                    <p><i class="fa fa-map-marker"></i>Binus Anggrek, Kemanggisan</p>
+                    <p><i class="fa fa-map-marker"></i>Binus Alam Sutera</p>
+                    <p><i class="fa fa-map-marker"></i>Binus Senayan</p>
+                </div>
+                <div class="fri">
+                    <h1>Get In Touch</h1>
+                    <p>VOrgreens@gmail.com<i class="fa fa-paper-plane"></i></p>
+                <p>(021)12345678<i class="fa fa-phone"></i></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <p>Copyright VOrgreens</p>
+            </div>
+        </section>
+    
+        <script>
+            var tombol2 = document.getElementById("tombol2")
+            var menu = document.getElementById("menu")
+            var menuu = document.getElementById("menuu")
+    
+            menu.style.right = "-250px"
+            tombol2.onclick = function(){
+                if(menu.style.right == "-250px"){
+                    menu.style.right = "0";
+                    menuu.src = "close.png"
+                }
+                else{
+                    menu.style.right = "-250px";
+                    menuu.src = "menu.png"
+                }
+            }
+    
+        </script>
+
+
+    </body>
+</html>
+

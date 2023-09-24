@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOrgreens</title>
+     <script src="https://kit.fontawesome.com/d1d00c550e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="menu.css"
+</head>
+<body>
+
+    <section id="banner">
+        <section id="pop">
+            <div class="title-text">
+                <p>Menus</p>
+                <h1>Our Menu</h1>
+                <h2>Foods</h2>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <img src="menu1.jpg">
+                    <div class="over"></div>
+                    <div class="des">
+                        <h3>Salad Salmon</h3>
+                        <hr>
+                        <p>IDR 80K</p>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="menu2.jpg">
+                    <div class="over"></div>
+                    <div class="des">
+                        <h3>Bowl roasted prawns</h3>
+                        <hr>
+                        <p>IDR 68K</p>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="menu3.jpg">
+                    <div class="over"></div>
+                    <div class="des">
+                        <h3>Grilled chicken with broccoli</h3>
+                        <hr>
+                        <p>IDR 65K</p>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="menu4.jpg">
+                    <div class="over"></div>
+                    <div class="des">
+                        <h3>Chicken Teriyaki</h3>
+                        <hr>
+                        <p>IDR 65K</p>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="menu5.jpg">
+                    <div class="over"></div>
+                    <div class="des">
+                        <h3>Keto Salad</h3>
+                        <hr>
+                        <p>IDR 75K</p>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="menu7.jpg">
+                    <div class="over"></div>
+                    <div class="des">
+                        <h3>Summer Peach Spinach Salad</h3>
+                        <hr>
+                        <p>IDR 78K</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="banner2"></section>
+
+    <section id="banner3">
+        <section id="pop">
+            <div class="title-text">
+                <h2>Drinks</h2>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <img src="drink1.jpg">
+                    <div class="over"></div>
+                    <div class="des">
+                        <h3>Mineral Water</h3>
+                        <hr>
+                        <p>IDR 15K</p>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="drink2.jpg">
+                    <div class="over"></div>
+                    <div class="des">
+                        <h3>Indused Water</h3>
+                        <hr>
+                        <p>IDR 30K</p>
+                    </div>
+                </div>
+    </section>
+    
+
+    <div id="menu">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About-us.html">About Us</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="findus.html">Find Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="tombol2">
+        <img src="menu.png" id="menuu">
+    </div>
+
+
+
+    <section id="footer">
+        <div class="title-text">
+            <p>Contact</p>
+            <h1>You can contact Us</h1>
+        </div>
+        <div class="fr">
+            <div class="fle">
+                <h1>Office</h1>
+                <p><i class="fa fa-map-marker"></i>Binus Anggrek, Kemanggisan</p>
+                <p><i class="fa fa-map-marker"></i>Binus Alam Sutera</p>
+                <p><i class="fa fa-map-marker"></i>Binus Senayan</p>
+            </div>
+            <div class="fri">
+                <h1>Get In Touch</h1>
+                <p>VOrgreens@gmail.com<i class="fa fa-paper-plane"></i></p>
+                <p>(021)12345678<i class="fa fa-phone"></i></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <p>Copyright VOrgreens</p>
+        </div>
+    </section>
+
+    <script>
+        var tombol2 = document.getElementById("tombol2")
+        var menu = document.getElementById("menu")
+        var menuu = document.getElementById("menuu")
+
+        menu.style.right = "-250px"
+        tombol2.onclick = function(){
+            if(menu.style.right == "-250px"){
+                menu.style.right = "0";
+                menuu.src = "close.png"
+            }
+            else{
+                menu.style.right = "-250px";
+                menuu.src = "menu.png"
+            }
+        }
+
+    </script>
+</body>
+</html>

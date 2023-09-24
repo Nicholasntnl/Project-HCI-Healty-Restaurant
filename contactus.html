@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecontact.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="menu">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About-us.html">About Us</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="findus.html">Find Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="tombol2">
+        <img src="menu.png" id="menuu">
+    </div>
+
+    <div id="paper">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1>Contact Us</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <small class="error"></small>
+
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" placeholder="Your Gender">
+            <small class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Your Email">
+            <small class="error"></small>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" placeholder="Your Phone">
+            <small class="error"></small>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" placeholder="Your City">
+            <small class="error"></small>
+
+            <label for="message">Message: </label>
+            <textarea id="message" placeholder="Your Message" rows="7"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Send Message">
+                <p id="success"></p>
+            </div>
+
+        </form>
+
+    </div>
+
+    <section id="footer">
+        <div class="title-text">
+            <p>Contact</p>
+            <h1>You can contact Us</h1>
+        </div>
+        <div class="fr">
+            <div class="fle">
+                <h1>Office</h1>
+                <p><i class="fa fa-map-marker"></i>Binus Anggrek, Kemanggisan</p>
+                <p><i class="fa fa-map-marker"></i>Binus Alam Sutera</p>
+                <p><i class="fa fa-map-marker"></i>Binus Senayan</p>
+            </div>
+            <div class="fri">
+                <h1>Get In Touch</h1>
+                <p>VOrgreens@gmail.com<i class="fa fa-paper-plane"></i></p>
+                <p>(021)12345678<i class="fa fa-phone"></i></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <p>Copyright VOrgreens</p>
+        </div>
+    </section>
+
+    <script>
+        var tombol2 = document.getElementById("tombol2")
+        var menu = document.getElementById("menu")
+        var menuu = document.getElementById("menuu")
+
+        menu.style.right = "-250px"
+        tombol2.onclick = function(){
+            if(menu.style.right == "-250px"){
+                menu.style.right = "0";
+                menuu.src = "close.png"
+            }
+            else{
+                menu.style.right = "-250px";
+                menuu.src = "menu.png"
+            }
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
